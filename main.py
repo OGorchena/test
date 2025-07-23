@@ -1,12 +1,6 @@
-data = input("Сколько тебе лет?: ")
-if data == "18":
-    print("Ты совершеннолетний!")   
-else:
-    print("Ты несовершеннолетний!") 
-    
-x = 0 
-while x == 0:
-    print("Цикл выполняется")
-    
+from typing import Union
+
+from fastapi import FastAPI
+
     
     
