@@ -12,3 +12,11 @@ class Restaurant:
 my_restaurant = Restaurant("Vivaldi", "European kitchen")
 my_restaurant.describe_restaurant()
 my_restaurant.open_restaurant()
+
+your_restaurant = Restaurant("Clood Mone", "French kitchen")
+your_restaurant.describe_restaurant()
+your_restaurant.open_restaurant()
+
+our_restautant = Restaurant("Fishka", "Russian kitchen")
+our_restautant.describe_restaurant()
+our_restautant.open_restaurant()
