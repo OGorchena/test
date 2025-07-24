@@ -1,21 +1,14 @@
-data_fruits = ["banana", "cherry", "elderberry"]
-data_vegetables = ["carrot", "broccoli", "spinach", "potato"]
-
-def choose_1():
-   index = int(input(f"Выберите один фрукт (используя цифры): {', '.join([f'{i}: {fruit}' for i, fruit in enumerate(data_fruits)])}: "))
-   if 0 <= index < len(data_fruits):
-       print(f"Вы выбрали: {data_fruits[index]}")
-   else:
-       print("Неверный индекс. Пожалуйста, попробуйте снова.")
-def choose_2():
-   index = int(input(f"Выберите один овощь (используя цифры): {', '.join([f'{i}: {fruit}' for i, fruit in enumerate(data_vegetables)])}: "))
-   if 0 <= index < len(data_vegetables):
-       print(f"Вы выбрали: {data_vegetables[index]}")
-       print(f"Спасибо за покупки! \n Ваша корзина: {data_fruits[index]}, {data_vegetables[index]}")
-   else:
-       print("Неверный индекс. Пожалуйста, попробуйте снова.")
+class Restaurant:
+   def __init__(self, restaurant_name, cuisine_type):
+      self.restaurant_name = restaurant_name
+      self.cuisine_type = cuisine_type
+   def describe_restaurant(self):
+      print(f"Название ресторана: {self.restaurant_name}")
+      print(f"Тип кухни: {self.cuisine_type}")
    
+   def open_restaurant(self):
+      print(f"Restaurant {self.restaurant_name} open")
 
-
-choose_1()
-choose_2()
+my_restaurant = Restaurant("Vivaldi", "European kitchen")
+my_restaurant.describe_restaurant()
+my_restaurant.open_restaurant()
