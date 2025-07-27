@@ -22,4 +22,4 @@ Second_user.greet_user()
       
    
    
-   
+print("Lox")   
